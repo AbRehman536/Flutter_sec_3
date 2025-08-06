@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class Appbardemo extends StatelessWidget {
-  const Appbardemo({super.key});
+class RowColumnDemo extends StatelessWidget {
+  const RowColumnDemo({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -9,7 +9,7 @@ class Appbardemo extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.blue,
         leading: Icon(Icons.arrow_back_ios_new,color: Colors.white,size: 30,),
-        title: Text("App Bar Demo",style: TextStyle(
+        title: Text("Row Column",style: TextStyle(
           fontWeight: FontWeight.w700,
           fontSize: 30,
           color: Colors.white,
@@ -22,7 +22,22 @@ class Appbardemo extends StatelessWidget {
       floatingActionButton: FloatingActionButton(
         backgroundColor: Colors.blue,
         onPressed: (){},child: Icon(Icons.add,color: Colors.white,),),
-
+      body: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Icon(Icons.account_balance),
+          Text("Abdullah"),
+          Text("Class"),
+          Icon(Icons.comment),
+          Icon(Icons.account_balance),
+          Text("Abdullah"),
+          Text("Class"),
+          Icon(Icons.comment),
+          Icon(Icons.account_balance),
+          Text("Abdullah"),
+          Text("Class"),
+          Icon(Icons.comment),
+        ],),
     );
   }
 }
