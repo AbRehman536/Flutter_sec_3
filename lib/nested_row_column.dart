@@ -31,9 +31,14 @@ class NestedRowColumn extends StatelessWidget {
           Icon(Icons.bookmark),
           Icon(Icons.add_task),
         ],),
+          Column(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+            Icon(Icons.notification_add),
+            Icon(Icons.person),
+          ],),
           SizedBox(height: 15,),
-          Icon(Icons.notification_add),
-          Icon(Icons.person),
+
           SizedBox(height: 15,),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
