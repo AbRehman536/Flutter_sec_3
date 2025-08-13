@@ -69,6 +69,7 @@ class _LoginFormState extends State<LoginForm> {
             ScaffoldMessenger.of(context).showSnackBar(
                 SnackBar(content: Text("Password cannot be less than 8 digits")));
             return;
+
           }
         }, child: Text("Login")),
       ],),
