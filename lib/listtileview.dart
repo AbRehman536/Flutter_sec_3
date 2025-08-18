@@ -14,7 +14,7 @@ class ListTileView extends StatelessWidget {
         foregroundColor: Colors.white,
       ),
       body: Card(
-        color: Colors.greenAccent,
+        color: Colors.green,
         child: ListView.builder(
           itemCount: 5,
           itemBuilder: (context, i){
