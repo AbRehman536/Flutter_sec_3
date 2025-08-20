@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_sec_3/image_assets.dart';
 import 'package:flutter_sec_3/listtileview.dart';
 import 'package:flutter_sec_3/login_form.dart';
+import 'package:flutter_sec_3/multi_selection.dart';
 import 'package:flutter_sec_3/nested_row_column.dart';
 import 'package:flutter_sec_3/network_image.dart';
 import 'package:flutter_sec_3/row_column.dart';
@@ -40,7 +41,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: SingleSelectionDemo(),
+      home: MultipleSelectionDemo(),
     );
   }
 }
