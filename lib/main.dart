@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_sec_3/gridview.dart';
 import 'package:flutter_sec_3/image_assets.dart';
 import 'package:flutter_sec_3/listtileview.dart';
 import 'package:flutter_sec_3/login_form.dart';
@@ -42,7 +43,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: PageViewDemo(),
+      home: GridViewDemo(),
     );
   }
 }
