@@ -12,6 +12,7 @@ import 'package:flutter_sec_3/row_column.dart';
 import 'package:flutter_sec_3/single_selection.dart';
 
 import 'appbardemo.dart';
+import 'models/curved_bottombar.dart';
 
 void main() {
   runApp(const MyApp());
@@ -44,7 +45,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: BottomBarView(),
+      home: CurvedBottombar(),
     );
   }
 }
