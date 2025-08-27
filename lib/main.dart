@@ -10,9 +10,10 @@ import 'package:flutter_sec_3/network_image.dart';
 import 'package:flutter_sec_3/pageviewdemo.dart';
 import 'package:flutter_sec_3/row_column.dart';
 import 'package:flutter_sec_3/single_selection.dart';
+import 'package:flutter_sec_3/tabbar.dart';
 
 import 'appbardemo.dart';
-import 'models/curved_bottombar.dart';
+import 'curved_bottombar.dart';
 
 void main() {
   runApp(const MyApp());
@@ -45,7 +46,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: CurvedBottombar(),
+      home: TabBArDemo(),
     );
   }
 }
