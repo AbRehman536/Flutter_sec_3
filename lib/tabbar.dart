@@ -11,17 +11,21 @@ class _TabBArDemoState extends State<TabBArDemo> {
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
-      length: 3,
+      length: 6,
       child: Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.greenAccent,
           leading: Icon(Icons.arrow_back_ios),
           title: Text("Tab Bar"),
           bottom: TabBar(
+            isScrollable: true,
               indicatorColor: Colors.black,
               labelColor: Colors.white,
               unselectedLabelColor: Colors.redAccent,
               tabs: [
+            Tab(icon: Icon(Icons.home), text: 'Home',),
+            Tab(icon: Icon(Icons.person), text: 'Profile',),
+            Tab(icon: Icon(Icons.settings), text: 'Settings',),
             Tab(icon: Icon(Icons.home), text: 'Home',),
             Tab(icon: Icon(Icons.person), text: 'Profile',),
             Tab(icon: Icon(Icons.settings), text: 'Settings',),
@@ -32,6 +36,9 @@ class _TabBArDemoState extends State<TabBArDemo> {
           ],
         ),
         body: TabBarView(children: [
+          Center(child: Text("Home"),),
+          Center(child: Text("Profile"),),
+          Center(child: Text("Settings"),),
           Center(child: Text("Home"),),
           Center(child: Text("Profile"),),
           Center(child: Text("Settings"),),
