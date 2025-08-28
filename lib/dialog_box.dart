@@ -73,8 +73,7 @@ class _DialogBoxDemoState extends State<DialogBoxDemo> {
                       }, child: Text("Yes")),
                       Icon(Icons.email_outlined),
                       IconButton(onPressed: (){
-                        Navigator.push(context, MaterialPageRoute(builder: (context)=> GridViewDemo()));
-
+                        Navigator.pop(context);
                       }, icon: Icon(Icons.person_pin_outlined)),
                     ],
                   );
