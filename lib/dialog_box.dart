@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_sec_3/gridview.dart';
 
 class DialogBoxDemo extends StatefulWidget {
   const DialogBoxDemo({super.key});
@@ -68,11 +69,12 @@ class _DialogBoxDemoState extends State<DialogBoxDemo> {
                         Navigator.pop(context);
                       }, child: Text("No")),
                       TextButton(onPressed: (){
-                        Navigator.pop(context);
+                        Navigator.push(context, MaterialPageRoute(builder: (context)=> GridViewDemo()));
                       }, child: Text("Yes")),
                       Icon(Icons.email_outlined),
                       IconButton(onPressed: (){
-                        Navigator.pop(context);
+                        Navigator.push(context, MaterialPageRoute(builder: (context)=> GridViewDemo()));
+
                       }, icon: Icon(Icons.person_pin_outlined)),
                     ],
                   );
