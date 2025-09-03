@@ -10,23 +10,29 @@ class PopupMenuDemo extends StatelessWidget {
         backgroundColor: Colors.yellow,
         title: Text("Pop Up Menu"),
         actions: [
-          PopupMenuButton<String>(
-            onSelected: (value) {
-              ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text("You selected : $value")));
-            },
-              itemBuilder: (BuildContext context){
-                return [
-                  const PopupMenuItem(
-                    value: "Profile",
-                      child: Text("Profile")),
-                  const PopupMenuItem(
-                    value: "Settings",
-                      child: Text("Settings")),
-                  const PopupMenuItem(
-                    value: "Logout",
-                      child: Text("Logout")),
-                ];
-              })
+          Padding(
+            padding: const EdgeInsets.all(18.0),
+            child: PopupMenuButton<int>(
+              onSelected: (value){
+                ScaffoldMessenger.of(context).showSnackBar(
+                    SnackBar(content: Text("Selected item $value")));
+
+              },
+                itemBuilder: (BuildContext context){
+                  return [
+                    PopupMenuItem(
+                        value: 1,
+                        child: Text("Profile")),
+                    PopupMenuItem(
+                        value: 2,
+                        child: Text("Settings")),
+                    PopupMenuItem(
+                        value:3,
+                        child: Text("Logout")),
+                  ];
+
+                }),
+          )
         ],
       ),
       body: Center(child:

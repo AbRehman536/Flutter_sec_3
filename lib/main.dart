@@ -14,6 +14,7 @@ import 'package:flutter_sec_3/pageviewdemo.dart';
 import 'package:flutter_sec_3/popup_menu.dart';
 import 'package:flutter_sec_3/row_column.dart';
 import 'package:flutter_sec_3/single_selection.dart';
+import 'package:flutter_sec_3/stack_view.dart';
 import 'package:flutter_sec_3/tabbar.dart';
 
 import 'appbardemo.dart';
@@ -50,7 +51,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: DrawerMenuDemo(),
+      home: StackViewScreen(),
     );
   }
 }

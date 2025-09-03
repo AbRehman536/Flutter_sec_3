@@ -10,11 +10,12 @@ class DrawerMenuDemo extends StatelessWidget {
       drawer: Drawer(
         child: ListView(
           children: [
-            DrawerHeader(
-                decoration: BoxDecoration(
-                  color: Colors.blue
-                )
-                ,child: Center(child: Text("My App Drawer",style: TextStyle(fontSize: 30,color: Colors.white),))),
+            Container(
+              height: 100,
+              color: Colors.blue,
+              child: DrawerHeader(
+                  child: Center(child: Text("My App Drawer",style: TextStyle(fontSize: 30,color: Colors.white),))),
+            ),
             ListTile(
               leading: Icon(Icons.home),
               title: Text("Home"),
@@ -23,15 +24,15 @@ class DrawerMenuDemo extends StatelessWidget {
               },
             ),
             ListTile(
-              leading: Icon(Icons.settings),
-              title: Text("Settings"),
+              leading: Icon(Icons.person),
+              title: Text("Profile"),
               onTap: (){
                 Navigator.pop(context);
               },
             ),
             ListTile(
-              leading: Icon(Icons.person),
-              title: Text("Profile"),
+              leading: Icon(Icons.settings),
+              title: Text("Settings"),
               onTap: (){
                 Navigator.pop(context);
               },
@@ -47,7 +48,7 @@ class DrawerMenuDemo extends StatelessWidget {
         ),
       ),
       body: Center(child:
-      Text("Tap the 3 lines menu in AppBar"),),
+      Text("Scroll right side to open drawer menu"),),
     );
   }
 }
